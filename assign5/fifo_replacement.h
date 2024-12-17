@@ -1,25 +1,23 @@
 /**
 * Assignment 5: Page replacement algorithms
  * @file fifo_replacement.h
- * @author ??? (TODO: your name)
+ * @author Arpita Godbole & Svetya Kopisetty
  * @brief A class implementing the FIFO page replacement algorithms
  * @version 0.1
  */
-//You must complete the all parts marked as "TODO". Delete "TODO" after you are done.
-// Remember to add sufficient and clear comments to your code
 
 #pragma once
-
-// Remember to add comments to your code
 
 #include "replacement.h"
 
 /**
  * @brief A class to simulate FIFO page replacement algorithm.
  */
-class FIFOReplacement : public Replacement {
+class FIFOReplacement : public Replacement 
+{
 private:
-    // TODO: Add necessary member variables to this class
+    //fifo_queue vector
+    vector <int> fifo_queue;
 
 public:
     /**
@@ -50,3 +48,4 @@ public:
     virtual int replace_page(int page_num);
 
 };
+

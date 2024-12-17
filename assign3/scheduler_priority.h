@@ -13,10 +13,12 @@
 #define ASSIGN3_SCHEDULER_PRIORITY_H
 
 #include "scheduler.h"
+#include <vector>
 
 class SchedulerPriority : public Scheduler {
 private:
-    // TODO: add necessary member variables here for your implementation
+    vector<PCB> processes;
+    vector<int> completion_times;
 
 public:
     /**
@@ -34,7 +36,7 @@ public:
      *        It is used to initialize the scheduler.
      * @param process_list The list of processes in the simulation.
      */
-    void init(std::vector<PCB>& process_list) override;
+    void init(vector<PCB>& process_list) override;
 
     /**
      * @brief This function is called once after the simulation ends.
@@ -42,10 +44,7 @@ public:
      */
     void print_results() override;
 
-    /**
-     * @brief This function simulates the scheduling of processes in the ready queue.
-     *        It stops when all processes are finished.
-     */
+    
     void simulate() override;
 
 };

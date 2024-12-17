@@ -1,7 +1,7 @@
 /**
 * Assignment 3: CPU Scheduler
  * @file scheduler_fcfs.h
- * @author ??? (TODO: your name)
+ * @author  Arpita Godbole & Svetya Koppisetty(TODO: your name)
  * @brief This Scheduler class implements the FCSF scheduling algorithm.
  * @version 0.1
  */
@@ -18,6 +18,9 @@
 class SchedulerFCFS : public Scheduler {
 private:
     // TODO: add necessary member variables here for your implementation
+
+    vector<PCB> processes;         // vector to store the processes
+    vector<int> completion_times;  
 
 public:
     /**
@@ -37,15 +40,14 @@ public:
     void init(std::vector<PCB>& process_list) override;
 
     /**
-     * @brief This function is called once after the simulation ends.
-     *        It is used to print out the results of the simulation.
-     */
-    void print_results() override;
-
-    /**
      * @brief This function simulates the scheduling of processes in the ready queue.
      *        It stops when all processes are finished.
      */
     void simulate() override;
+     /**
+     * @brief This function is called once after the simulation ends.
+     *        It is used to print out the results of the simulation.
+     */
+    void print_results() override;
 };
 #endif //ASSIGN3_SCHEDULER_FCFS_H

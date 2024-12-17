@@ -12,10 +12,15 @@
 #define ASSIGN3_SCHEDULER_RR_H
 
 #include "scheduler.h"
+#include <vector>
+#include <queue> 
 
 class SchedulerRR : public Scheduler {
 private:
     // TODO: add necessary member variables here for your implementation
+    int time_quantum; 
+    queue<PCB> ready_queue; /// ready queue
+    vector<PCB> completed_processes;
 
 public:
     /**

@@ -22,7 +22,7 @@ int main(int argc, char *argv[]) {
     std::cout << "=================================" << std::endl;
 
     // random seed. 
-    srand(1);
+    srand(10);
     int size = 500;
 
     ReadyQueue q2;    // Ready Queue

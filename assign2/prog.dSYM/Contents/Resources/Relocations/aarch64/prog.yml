@@ -1,0 +1,8 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/arpita/Documents/cs433/assign2/prog'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: __Z13parse_commandPcPS_, symObjAddr: 0x0, symBinAddr: 0x1000039E8, symSize: 0x98 }
+  - { offsetInCU: 0x2DF4, offset: 0x2DF4, size: 0x8, addend: 0x0, symName: __Z13parse_commandPcPS_, symObjAddr: 0x0, symBinAddr: 0x1000039E8, symSize: 0x98 }
+  - { offsetInCU: 0x2E4A, offset: 0x2E4A, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x98, symBinAddr: 0x100003A80, symSize: 0x3F4 }
+...
