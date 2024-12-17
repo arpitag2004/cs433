@@ -82,3 +82,4 @@ Students must follow the Campus Academic Integrity and Student Conduct Policies.
 - Posting your code publicly or showing it to anyone else
 - Using ChatGPT or any other generative artificial intelligence (AI) tools for programming assignments
 
+# cs433_fall24
